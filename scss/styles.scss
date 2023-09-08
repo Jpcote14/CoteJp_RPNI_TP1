@@ -54,41 +54,59 @@
     U+2C60-2C7F, U+A720-A7FF;
 }
 
+.row {
+  display: flex;
+  width: 100%;
+}
+
 // background image
 
-// .background-page {
-//   width: 100%;
-//   height: 100vh;
-//   z-index: -1;
-//   position: absolute;
-//   top: 0;
-//   background-image: url("../images/bg.jpg");
-//   background-color: black;
-//   background-repeat: repeat;
-//   background-attachment: scroll;
-//   overflow-x: hidden;
-//   margin: 0;
-//   left: 0;
-//   overflow: hidden;
-// }
+.background-page {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  background-image: url("../images/bg.jpg");
+  background-color: black;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  overflow-x: hidden;
+  margin: 0;
+  left: 0;
+  overflow: hidden;
+}
 
-// .background-img {
-//   width: 102%;
-//   height: 102%;
-//   position: absolute;
-//   top: -1%;
-//   left: -1%;
-//   background-position: center;
-//   background-size: cover;
-//   filter: blur(10px) brightness(50%);
-//   z-index: -1;
-//   background-image: url("../images/bg.jpg");
-// }
+.background-img {
+  width: 102%;
+  height: 102%;
+  position: fixed;
+  top: -1%;
+  left: -1%;
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px) brightness(50%);
+  z-index: -1;
+  background-image: url("../images/bg.jpg");
+}
 
 // Header
 
+body {
+  position: relative;
+}
+
 header {
-  position: sticky;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+@media (min-width: 532px) {
+  header {
+    width: 100%;
+    position: fixed;
+  }
 }
 
 .menu-sticky {
@@ -113,8 +131,17 @@ header {
     height: 50px;
   }
 }
+
 .section-droite {
+  display: flex;
+  align-items: center;
   text-align: center;
+}
+
+@media (min-width: 532px) and (max-width: 1179px) {
+  .section-droite {
+    display: none;
+  }
 }
 
 .reseaux-sociaux-header {
@@ -138,12 +165,18 @@ header {
 }
 .menu-icon {
   width: 40px;
+  height: 40px;
+}
+
+.svg-icon {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 // main
 
 main {
-  height: 100vh;
+  height: 100%;
   padding-left: 4%;
   padding-right: 4%;
   background-color: rgb(51, 51, 51, 0.3);
@@ -152,7 +185,7 @@ main {
 .info-album {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  padding-top: 120px;
 }
 
 @media (min-width: 532px) {
@@ -240,13 +273,14 @@ h3 {
   flex-direction: row;
   align-items: center;
   width: auto;
-
+  height: 48px;
   border: #fdfdfd solid 1px;
   padding: 12px 12px 12px 12px;
 }
 
 .stream-now_texte {
   margin: 0;
+  padding-left: 5px;
 }
 
 .stream_icon {
