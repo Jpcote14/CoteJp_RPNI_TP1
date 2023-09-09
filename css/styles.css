@@ -814,6 +814,7 @@ header {
 .menu-sticky {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 10px 15px 0px 15px;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -836,9 +837,7 @@ header {
   }
 }
 .section-droite {
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: none;
 }
 
 @media (min-width: 532px) and (max-width: 1179px) {
@@ -846,29 +845,60 @@ header {
     display: none;
   }
 }
-.reseaux-sociaux-header {
+@media (min-width: 1180px) {
+  .section-droite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.reseaux-sociaux_mobile {
   display: none;
   padding: 0;
 }
 
 @media (min-width: 532px) {
-  .reseaux-sociaux-header {
+  .reseaux-sociaux_mobile {
     display: flex;
     padding: 0;
   }
 }
 @media (min-width: 1180px) {
-  .reseaux-sociaux-header {
+  .reseaux-sociaux_mobile {
+    display: none;
+  }
+  .reseaux-sociaux_desktop {
     display: flex;
     flex-direction: column;
+    order: 3;
     padding: 0;
   }
 }
-.menu-icon {
+.menu-icon_mobile {
   width: 40px;
   height: 40px;
+  order: 50;
 }
 
+@media (min-width: 1180px) {
+  .menu-icon_mobile {
+    display: none;
+  }
+}
+.menu-icon_desktop {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+@media (min-width: 1180px) {
+  .menu-icon_desktop {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+}
 .svg-icon {
   padding-left: 4px;
   padding-right: 4px;
