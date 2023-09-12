@@ -397,3 +397,35 @@ main {
     padding: 24px;
   }
 }
+
+//tableau track list
+.section_liste-chansons {
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+}
+
+td {
+  width: fit-content;
+  padding-bottom: 10px;
+}
+
+.chanson-artiste {
+  width: 90%;
+}
+
+.chanson-artiste,
+.track_artiste,
+.track_chanson {
+  margin: 0;
+}
+
+.play-icon {
+  min-width: 36px;
+  min-height: 36px;
+  margin-right: 20px;
+}
