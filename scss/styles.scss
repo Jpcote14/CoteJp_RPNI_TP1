@@ -6,8 +6,13 @@
 // vrai site
 // https://www.monstercat.com/release/MCLP017
 
+//lien du repo github
+//Celui a cloner: https://github.com/Jpcote14/CoteJp_RPNI_TP1.git
+//Pour avoir acces au repo: https://github.com/Jpcote14/CoteJp_RPNI_TP1
+
 /* Importation des polices au tout début! */
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
 /**
  * @author COLLECTIF - @TIMCSF
@@ -42,16 +47,17 @@
 * {
   list-style: none;
   color: #fdfdfd;
-  font-family: "Poppins";
+  font-family: "Open Sans", sans-serif;
 }
 @font-face {
-  font-family: "Poppins";
-  font-style: normal;
+  font-family: "Open Sans";
+  font-style: italic;
   font-weight: 400;
+  font-stretch: 100%;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format("woff2");
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
-    U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV0ewJER.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 .row {
@@ -298,13 +304,25 @@ main {
 
 .nom-album-color {
   color: #50a584;
+  font-style: italic;
 }
 
-h1 {
+.album {
   font-size: 22px;
 }
-h3 {
+.artiste {
   font-size: 16px;
+}
+
+@media (min-width: 1180px) {
+  .album {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+  .artiste {
+    margin-top: 0;
+    font-size: 36px;
+  }
 }
 
 .btn-flex {
@@ -313,17 +331,14 @@ h3 {
 }
 
 .btn {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 600;
   width: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #50a584;
-  font-style: bold;
-  padding: 10px 20px 10px 20px;
-  font-size: 12px;
+  padding: 10px 30px 10px 30px;
 }
 
 .btn-secondaire {
@@ -341,7 +356,14 @@ h3 {
   margin-right: 5px;
 }
 
-.conteneur {
+@media (min-width: 1180px) {
+  .stream_h2 {
+    margin-top: 120px;
+    margin-bottom: 10px;
+  }
+}
+
+.conteneur-stream {
   display: flex;
   flex-direction: row;
 }
@@ -351,7 +373,7 @@ h3 {
   flex-direction: row;
   align-items: center;
   width: auto;
-  height: 48px;
+
   border: #fdfdfd solid 1px;
   padding: 12px 12px 12px 12px;
 }
@@ -362,8 +384,16 @@ h3 {
 }
 
 .stream_icon {
-  width: 48px;
-  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border: #fdfdfd solid 1px;
   padding: 12px 12px 12px 12px;
+}
+
+//impossible de comprendre pourquoi les img sont déformées
+@media (min-width: 1180px) {
+  .stream_icon,
+  .icon-texte {
+    padding: 24px;
+  }
 }
