@@ -232,13 +232,14 @@ main {
 
 @media (min-width: 1180px) {
   main {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }
 
 .section-info {
   padding-top: 120px;
+  margin-bottom: 75px;
 }
 
 @media (min-width: 1180px) {
@@ -356,16 +357,10 @@ main {
   margin-right: 5px;
 }
 
-@media (min-width: 1180px) {
-  .stream_h2 {
-    margin-top: 120px;
-    margin-bottom: 10px;
-  }
-}
-
 .conteneur-stream {
   display: flex;
   flex-direction: row;
+  margin-bottom: 75px;
 }
 
 .icon-texte {
@@ -373,14 +368,20 @@ main {
   flex-direction: row;
   align-items: center;
   width: auto;
-
   border: #fdfdfd solid 1px;
   padding: 12px 12px 12px 12px;
 }
 
 .stream-now_texte {
-  margin: 0;
-  padding-left: 5px;
+  display: none;
+}
+
+@media (min-width: 1180px) {
+  .stream-now_texte {
+    display: contents;
+    margin: 0;
+    padding-left: 5px;
+  }
 }
 
 .stream_icon {
@@ -411,11 +412,11 @@ tr {
 
 td {
   width: fit-content;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .chanson-artiste {
-  width: 90%;
+  width: 80%;
 }
 
 .chanson-artiste,
@@ -427,5 +428,18 @@ td {
 .play-icon {
   min-width: 36px;
   min-height: 36px;
-  margin-right: 20px;
+  margin: 0;
+}
+
+.track_chanson {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.track_artiste {
+  font-size: 14px;
+}
+
+.minutes {
+  font-size: 18px;
 }
