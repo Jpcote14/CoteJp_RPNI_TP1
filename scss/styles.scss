@@ -237,6 +237,16 @@ main {
   }
 }
 
+h2 {
+  font-size: 35px;
+}
+
+@media (min-width: 532px) {
+  h2 {
+    font-size: 45px;
+  }
+}
+
 .section-info {
   padding-top: 120px;
   margin-bottom: 75px;
@@ -400,23 +410,25 @@ main {
 }
 
 //tableau track list
-.section_liste-chansons {
-}
+// .section_liste-chansons {
+// }
 
 table {
   width: 100%;
 }
 
-tr {
-}
-
 td {
-  width: fit-content;
   padding-bottom: 15px;
 }
 
 .chanson-artiste {
-  width: 80%;
+  width: 60%;
+}
+
+@media (min-width: 1180px) {
+  .chanson-artiste {
+    width: 80%;
+  }
 }
 
 .chanson-artiste,
@@ -426,8 +438,8 @@ td {
 }
 
 .play-icon {
-  min-width: 36px;
-  min-height: 36px;
+  min-width: 24px;
+
   margin: 0;
 }
 
@@ -442,4 +454,31 @@ td {
 
 .minutes {
   font-size: 18px;
+}
+
+.share-icon {
+  width: 24px;
+}
+
+.numero-track {
+  font-size: 18px;
+}
+
+.conteneur_iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.conteneur_iframe > iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+iframe {
+  width: 100%;
 }
