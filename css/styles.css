@@ -1264,3 +1264,43 @@ input::placeholder {
 .copyright_p {
   margin-top: 40px;
 }
+
+@media (min-width: 1180px) {
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright_p {
+    margin: 0px;
+  }
+}
+.liste-reseaux {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reseaux-items {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footer-icon {
+  margin-right: 15px;
+}
+
+@media (min-width: 1180px) {
+  .footer-icon {
+    margin-right: 10px;
+  }
+}
+.footer_texte {
+  padding-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 12px;
+}
