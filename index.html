@@ -9,6 +9,7 @@
     <meta name="author" content="AUTHOR">
     <link rel="icon" type="image/x-icon" href='images/monstercat-logo.webp'>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- <script defer src=" scripts.js"></script> -->
     <title>Julian Lage - Monstercat</title>
 </head>
 
@@ -18,42 +19,39 @@
         <div class="background-img"></div>
     </div>
 
-    <div class="fade"></div>
-
     <header>
-
-        <nav class="menu-sticky">
+        <nav aria-label="Main navigation/menu" class="menu-sticky">
             <!-- ajouter un href au logo -->
             <img class="logo-img" src="images/monstercat-logo.webp">
 
             <ul class="reseaux-sociaux_mobile">
                 <!-- changer la couleur des icons en hover -->
-                <li><a href="lien-vers-le-reseau-social" class="menu-liens" target="_blank"><img alt="Instagram"
-                            class="svg-icon"
+                <li><a href="lien-vers-le-reseau-social" class="menu-liens" aria-label="Page Instagram de Monstercat"
+                        target="_blank"><img alt="Instagram" class="svg-icon"
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAuxJREFUSEvFlUGIlVUUx///+95QjMw99zEyq3QECzIkLIyIqBYpghCDjWhqbdqkLYIkDYoWQRRNUdGqhS1CxhTLoiCI2kkgoYhgVgxFBG2Kmbn3PTdTX98/bnxPPl/v0yEYvLv3cd75nf//nHsuscKHK5wfNwYQY1xP8qCkB0huBBoLkaSLJE8DeMfM5gYd+Y+CGON+ku8CaAP4FcAZAD80WHk3gE0A1gD4i+TT3vsj9dirADHGzSTPSLoEYEcI4afl9KjX620sy/IzAGvLsryn0+mc7/9vEHCK5PayLG/vdDq/XC95SukJAC9LSpKedM6dlfRpCGF6KCCllJNeMrPt9eSSXLfb3QrgDgB/S/rezL5OKW0l+WW20swmU0pnAaw2s3VNgC6AWTM70A+Yn59f0263TwC4b0DRaZLvS/qd5IT3/oMYY3Zgm5mtagKUkt4MIRzOAVXl3wDIFT3nnPvKOdcqiiKrmQEw571/kKRyfEopF7LTzFpNAJF8zXv/Qg6IMe4ieULSrhDCybqCGONuksdJTnnvc4Mz4EMAu83MNQIkzYQQnq8AMyQPLS0tjU1MTFyuA7rd7mpJfwB4xcxeqgCzAPaa2ZXhuWqKUkpZar4wz1aA10keLorCxsfHc3+unD6A5Kve+xcrwFEAj18P8LaZHawA0yQ/krQzhPBxHZBS2psHYsCirOCxa/agrqDW5EkAh6omt4ui2ALgDQA/eu8fGmjylJnd3NSDyyRnvfdP1cb0lna7fRzA/YNjOjIysmd0dPS3/vdqTB82M2sC5GU1N+yi9Xq9qbIsH3HO/Qngi7Gxsc/7lfeTpZTOAfBmdlsTIHv4aFmWG5azKuqKFhYW7my1WhcAHDOzfUMBi4uLdznnchUXJE2HEH4esGXozyr5JwAmJd0bQsg5/j3XWtf5snwrKVsCkgWA70jeJOlWSXmd5++jADYDKCQ9E0J4r17F0Bft/zw4kt4att5vzJO5HN+XG7PiCv4B7uxsKK1W6WAAAAAASUVORK5CYII=" /></a>
                 </li>
-                <li><a href="lien-vers-le-reseau-social" class="menu-liens" target="_blank"><img alt="Tiktok"
-                            class="svg-icon"
+                <li><a href="lien-vers-le-reseau-social" class="menu-liens" aria-label="Page Tiktok de Monstercat"
+                        target="_blank"><img alt="Tiktok" class="svg-icon"
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAf9JREFUSEu1lb9rFFEQx7+zCiJ4+30gBxZaKVGCNjYSC60UC7FWSPwVtLQTRHtjlU6CjZiYiIUIljaCsbGKoAiRGP8EebOHqKe3Iwu74Xnu5vZuzat23858PzM78+YJtnjJFutjaICqLgCYygP7RPLQZkE2BaTdbte12+1OFaQpAGZ22zk38z8B8wAuFoJm9h3AWefcqzLIKBn8BchFfwNYEpFnAD7HcbxawEYBhEUuC3qB5KUmgDCDnwC2AdgekOZJXh4I6HQ67V6vd01ExgHsNrM7zrkVVQ0B62Z2SkTuAjifiw4GJEkybWb3AewIIpsiudgPIHkgszGznUmS7M2eSa5VZqCqFwA8Kfm5BSCswXoBqNWmeRRfAOwJHFIR+WBm90g+rcqgFsB7f11EHgTGSwBukPxa7DUCqOoLAOdysdU4jsdFxMLoGgG89+9F5Egu+Ijklf7UVfUxgMl8f43kWO1hp6pvARzLHd6RPFoCyE7pwbxzlp1zJ2sDkiSZMbNbGy0mciKO4zfFu/f+tIi8DObQQ+fc9DCAMTP7GJzMbwBmAaRmtk9ErvaJTZDMsq5c/8yikk6qcl4kWVw89QGZpapmRZwDsKvM08xekzwjIj82iz77VjlNvff7oyi6mabpcRE5DOAXgOdRFM21Wq3lQcIbdaxrOKrd0PfBsKA/zhbaGcaIRcgAAAAASUVORK5CYII=" /></a>
                 </li>
-                <li><a href="lien-vers-le-reseau-social" class="menu-liens" target="_blank"><img alt="Twitter"
-                            class="svg-icon"
+                <li><a href="lien-vers-le-reseau-social" class="menu-liens" aria-label="Page Twitter de Monstercat"
+                        target="_blank"><img alt="Twitter" class="svg-icon"
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAiJJREFUSEvdlb9rFEEUx79vd/YU9piZPRROUPwBIoKKBCstFUER/IEEJWChhUh6RVH8A7RJEbGRIKSxSSEIKdKI2AQFRQsrgwHxONnbnZWAv26ejHhHvNvbyx1ckynnvfl+5r15+13CiBeNWB/rDFCr1cJqtbpS1LY4jqUQ4i6AUwB2AvjFzNNKqVuNRmOLEOK0lHKaiNjptFvEzH6WZe993x8vl8vvekGMMQsAjubElwFsY+aLWusnrXgbkCTJDs/zlgB8JaKzUsqXnSJpmo4R0euCCl8x83Nmno2i6E1nBRuzLPsGQLgAMz8KguBOGIZfWoLGmAkAswWAFSKalFI+7qrAbRhj3K0Pdwi8IKKnRLRorT0IYKoXgJlntNaXV8fbLarX6+VSqbSHiOYBbBrm+2Dme1rr67mAOI63CiE+AYgBbB4GAGBSKfUgF8DMXpZlHwFsH1IcRLRXSvkhF+A2kyQ553meG7G/Dz3gWlJK7eo802UVaZqOA7hNRPsHATDzNa31w74AY8xJAM8GEQewLKXcTUQ/+wL+jaub40trhPwGcEQptZiXn+um7sGTJNnn+/5NABcKQExEV6SUM71yugDO8MIwPGStvQHgRIH4d2vtRBRFc0WVtgFpmh7zPO8+Mx9YbYI9Ds83m82rlUrFGVzh+q8CZ8VBEJxn5jMAjgPYAOAHgBqAzwAWrLVzURS97Sfciq+zP9payx4kb+Qt+gMz8bUZQaHuOAAAAABJRU5ErkJggg==" /></a>
                 </li>
-                <li><a href="lien-vers-le-reseau-social" class="menu-liens" target="_blank"><img alt="Twitch"
-                            class="svg-icon"
+                <li><a href="lien-vers-le-reseau-social" class="menu-liens" aria-label="Page Twitch de Monstercat"
+                        target="_blank"><img alt="Twitch" class="svg-icon"
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAahJREFUSEvtlb9KA0EQxr/Zw8Iiu3dgpwjaiYXWohiwUgv/PICF+AKClY0idoKVhYVIGhvBKII2PoEgoo2VhYWKIiaZDZa5kYuJxPMScwlJ5cA1e3vzm29u9xtCi4NanB/tBYhIh7X2GUBXM8q01oqIJMjxQ4G1dk5E0gA+ROQqLoSIBoPijDHfeX8AmPkcwCQR3Wqth+MCcrncMRHNVlXAzAUAgbxGAUdENF9LwVffGgf8qaAqgJlPAMyUq8tms0NKqRsAG8aYtaCwelr0D2jqH2yKyKjruslSv/sB7CulUlrrVGmttaeImc8ATLXkmDLzMoBtEXlyXbenfEnDN7mhe2CtXRGRLSJ6LBQKY57nPdQEAHgFsPu9iehaa32ayWR6HcdZrLQQEekmoqXSN6PGmPvK95EKwh4kInuO46z6vn8JoC/Co14AjIWT/3JTZi62KAKQJqIBAMETjjcAI1HJowDrIflJIhoPZdwB8F5eU0odJhKJu2rOW3OiMXMALPoMAB/AgjHmII6N1wSISGc+n58QkWnf9y88zwuGUaxo70yOVVqdmz8Bis//GT9TTp0AAAAASUVORK5CYII=" /></a>
                 </li>
-                <li><a href="lien-vers-le-reseau-social" class="menu-liens" target="_blank"><img alt="Facebook"
-                            class="svg-icon"
+                <li><a href="lien-vers-le-reseau-social" class="menu-liens" aria-label="Page Facebook de Monstercat"
+                        target="_blank"><img alt="Facebook" class="svg-icon"
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAixJREFUSEu1lk2oTVEUx/+r1CWsdVwTIZkYKJIhKRkISYiByITiZaCnVzKQj2SgCAMfZXAn6g3kFfkY0Ru8jN/Q81GiR90Mzt73FcX119G5t3v3O2d7l3f38KyP31prr7X2EfT5SJ/9IwogWfHe7wOwXUTWkVwJgCLygeQ4yedmNiIiP8oCLQU453YAuA0gcxo770gOJEnyokipEOCcuwDgfA/l+yUip1X1WmgzDeCcuwjgXA/OO1UHzexm54cugPd+F8nHEedfAQw1m83RarX6MdNL0/SqiAzlNlkmm1V1rOWjDajX6wsqlcpbAEtKAD9FZI2qTnTKA0AmmlDVta2LbwPSNB0QkTuR6IfN7GBLnqbpVhHZCGAbgA1dZRHZo6qPsm9tgHPuCYCdZQCSZ5MkuZyXZb+IPChtTZF7qnosBEwCWBrJ4JSZ3cjkzrlBANcjuuNmtj4EfAMwd5YAqZktCgFTAOYHgC9mFssK3vuXJLcEdlNmtjAEvAGwKlD8bGbLYjPhvf9Ecnmg89rMVoeA+wAO9ZJBvqu+hwGQrCVJciQEHAAwPBt3IEVtSnKO9/49gBUlkJl2Ubs8XRnk7Zdt0Gf/AchW+SZVfdXyUbTssmV1sgAykwwumVnXopwGICmNRuMuyT+T2HGiABG5oqpnwsBiD87hfFoX50aFAJKTInLczJ4WlfZvT+Y87/1REdlLcsTMbuV3dQLAbpIPzaz2T09mbLh6kfX9r+I3bHv7Gb7vjmQAAAAASUVORK5CYII=" /></a>
                 </li>
-                <li><a href="lien-vers-le-reseau-social" class="menu-liens" target="_blank"><img alt="Discord"
-                            class="svg-icon"
+                <li><a href="lien-vers-le-reseau-social" class="menu-liens" aria-label="Serveur Discord de Monstercat"
+                        target="_blank"><img alt="Discord" class="svg-icon"
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeJJREFUSEvNVT1rVEEUPXdcFtfVufM6Q0DED0SbpBJsBW1tlFiIX4WljWJjn07QnxAEi1hY+IGQaBGwFASx8QMJBInNvplZttBl35EJmxCXuPvehgRve+89hzPn3juCHQ7ZYXzsLoH3fkZEZgEcqaisB2CxVqvdbDabPzb3/qUghPAZwPGK4BvlInLXWvtgGAHHBe/3zanq9f+LQERWSP4CcBDAJwATAFYATAHYN6C4mgKS940xSyR/quqXdbBOpzPR7XZPGmNmSN7aRFKJYEFVzw/zxHuficgygAPjeHBVVR+PMj3GOE/yUmWCoigOZ1m2nOf5tDHmPcnLzrmnIYSXIjJprZ1OoCGE2wAeVSXoqOr+1BRjPEPynYjcsNbOxRjfkpxU1RMp770/KyJvqhJ8VdW1hcvz3GVZ5gefKs/zKefcxxhj2vr1ASht8m8AF1T1df+J7vVB0iLuIbm3Xq8/bDQaqyGEWRFJ+RSlCdaqSS6JyHcA1wYUrAJ4BuAcgGPjjumoAdoqP1JBAWzrhA8niDF+IJlOQNmYB3ARgCnlQbvdPtXr9e4AOFqGwRjzHMC3oiieiEhjpMllQLeqCSGcBvAKwIuh53pcgtTXarUOGWOuOOfSj7gRu/snb0fBv3r/AMFP3xnphmnqAAAAAElFTkSuQmCC" /></a>
                 </li>
-                <li><a href="lien-vers-le-reseau-social" class="menu-liens" target="_blank"><img alt="Spotify"
-                            class="svg-icon"
+                <li><a href="lien-vers-le-reseau-social" class="menu-liens" aria-label="Profil Spotify de Monstercat"
+                        target="_blank"><img alt="Spotify" class="svg-icon"
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAthJREFUSEu1VV2ITVEYXeuczG3cztln/GQajJ948vvAm6TkJy8SkhceSHnxQEo8eFEkL/KCPKCU5C9KkRRSSopoQv7ycFHM3efMMBjO0h73jjPHHfcS+/Hba3/rW3vt/X3Ef178z/nxWwJJQ5IkWQ5gCckZksYBIMmXku4DuBSG4TmSnwcrdFACa+0CkgcBTKyj8oWkDVEUXa2Fq0lgrd1OcpertsErlKTtURTtyeN/SWCt3VFJ3mDunzCSW8Mw3Jc9OIDAWruQ5OU/zvzzgDzPmxcEwY1qqJ+gVCoNLRaLjwCMrWy+A/ASwBuSryW9BfDNXZukaSTnABhZo5hHYRhOJ9nr9voJkiRZJ+mIC6ZpurylpeVsPSVxHE8mOVfSCgCLqvlILg3D8MIAAmvtWZLLKkk3A+iQNMHzvLGS2km2pWnqk/wE4BbJa0EQ3CbpVKFcLo8j6eKjARw0xmwcQBDH8XMAE2pU/QXAK0klACJpAMys4LoBXPR9f3exWHzY1dV1T9J0AHeNMbPyBAmAoHpQ0tKmpqbHzc3NJZLKEsdxPEzSfJJLAKwGUMgV9t4YMyJP8B7AsAqwS9IykqMATALg7npMmqbOs+ee513o7u6+0tbW9rGzs7Pd933n3YIMSWyMifIePCA5tZ6xmX3XHs4A2CkpInkns9dhjJmSV3AMwJoM6BSAoz09PTdaW1s/VOPlcnm87/srJM2uvBznSX4dN8aszStYRfJkFSlpL4AXFenD+z/Ojz9xvbe390ShUCikaXo48/r6YJJWRlF0egCBpEKSJB0NNLcql3sUO5w/ADZlJDypfLS+DptvFe5l1OyKDXqTkpwXhuHNfsX5g9babSR3N5gwD9tkjDmQDf6rdu1+8xZjzP4846D9Po7jxQAOAWivo+ap53nrgyC4XgtXb2Q64/tGpmsBJN3IdOuZpLsALhtjzpP8OlgRjU6sv7Sk8ZH41wTfAamoFCj4fB7NAAAAAElFTkSuQmCC" /></a>
                 </li>
             </ul>
@@ -65,25 +63,32 @@
             <div class="section-droite">
                 <ul class="reseaux-sociaux_desktop">
                     <!-- changer la couleur des icons en hover -->
-                    <li><a class="menu-liens" target="_blank"><img alt="Instagram" class="svg-icon"
+                    <li><a href="" aria-label="Monstercat Instagram page" class="menu-liens" target="_blank"><img
+                                alt="Instagram" class="svg-icon"
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAuxJREFUSEvFlUGIlVUUx///+95QjMw99zEyq3QECzIkLIyIqBYpghCDjWhqbdqkLYIkDYoWQRRNUdGqhS1CxhTLoiCI2kkgoYhgVgxFBG2Kmbn3PTdTX98/bnxPPl/v0yEYvLv3cd75nf//nHsuscKHK5wfNwYQY1xP8qCkB0huBBoLkaSLJE8DeMfM5gYd+Y+CGON+ku8CaAP4FcAZAD80WHk3gE0A1gD4i+TT3vsj9dirADHGzSTPSLoEYEcI4afl9KjX620sy/IzAGvLsryn0+mc7/9vEHCK5PayLG/vdDq/XC95SukJAC9LSpKedM6dlfRpCGF6KCCllJNeMrPt9eSSXLfb3QrgDgB/S/rezL5OKW0l+WW20swmU0pnAaw2s3VNgC6AWTM70A+Yn59f0263TwC4b0DRaZLvS/qd5IT3/oMYY3Zgm5mtagKUkt4MIRzOAVXl3wDIFT3nnPvKOdcqiiKrmQEw571/kKRyfEopF7LTzFpNAJF8zXv/Qg6IMe4ieULSrhDCybqCGONuksdJTnnvc4Mz4EMAu83MNQIkzYQQnq8AMyQPLS0tjU1MTFyuA7rd7mpJfwB4xcxeqgCzAPaa2ZXhuWqKUkpZar4wz1aA10keLorCxsfHc3+unD6A5Kve+xcrwFEAj18P8LaZHawA0yQ/krQzhPBxHZBS2psHYsCirOCxa/agrqDW5EkAh6omt4ui2ALgDQA/eu8fGmjylJnd3NSDyyRnvfdP1cb0lna7fRzA/YNjOjIysmd0dPS3/vdqTB82M2sC5GU1N+yi9Xq9qbIsH3HO/Qngi7Gxsc/7lfeTpZTOAfBmdlsTIHv4aFmWG5azKuqKFhYW7my1WhcAHDOzfUMBi4uLdznnchUXJE2HEH4esGXozyr5JwAmJd0bQsg5/j3XWtf5snwrKVsCkgWA70jeJOlWSXmd5++jADYDKCQ9E0J4r17F0Bft/zw4kt4att5vzJO5HN+XG7PiCv4B7uxsKK1W6WAAAAAASUVORK5CYII=" /></a>
                     </li>
-                    <li><a class="menu-liens" target="_blank"><img alt="Tiktok" class="svg-icon"
+                    <li><a href="" aria-label="Monstercat Tiktok page" class="menu-liens" target="_blank"><img
+                                alt="Tiktok" class="svg-icon"
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAf9JREFUSEu1lb9rFFEQx7+zCiJ4+30gBxZaKVGCNjYSC60UC7FWSPwVtLQTRHtjlU6CjZiYiIUIljaCsbGKoAiRGP8EebOHqKe3Iwu74Xnu5vZuzat23858PzM78+YJtnjJFutjaICqLgCYygP7RPLQZkE2BaTdbte12+1OFaQpAGZ22zk38z8B8wAuFoJm9h3AWefcqzLIKBn8BchFfwNYEpFnAD7HcbxawEYBhEUuC3qB5KUmgDCDnwC2AdgekOZJXh4I6HQ67V6vd01ExgHsNrM7zrkVVQ0B62Z2SkTuAjifiw4GJEkybWb3AewIIpsiudgPIHkgszGznUmS7M2eSa5VZqCqFwA8Kfm5BSCswXoBqNWmeRRfAOwJHFIR+WBm90g+rcqgFsB7f11EHgTGSwBukPxa7DUCqOoLAOdysdU4jsdFxMLoGgG89+9F5Egu+Ijklf7UVfUxgMl8f43kWO1hp6pvARzLHd6RPFoCyE7pwbxzlp1zJ2sDkiSZMbNbGy0mciKO4zfFu/f+tIi8DObQQ+fc9DCAMTP7GJzMbwBmAaRmtk9ErvaJTZDMsq5c/8yikk6qcl4kWVw89QGZpapmRZwDsKvM08xekzwjIj82iz77VjlNvff7oyi6mabpcRE5DOAXgOdRFM21Wq3lQcIbdaxrOKrd0PfBsKA/zhbaGcaIRcgAAAAASUVORK5CYII=" /></a>
                     </li>
-                    <li><a class="menu-liens" target="_blank"><img alt="Twitter" class="svg-icon"
+                    <li><a href="" aria-label="Monstercat Twitter page" class="menu-liens" target="_blank"><img
+                                alt="Twitter" class="svg-icon"
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAiJJREFUSEvdlb9rFEEUx79vd/YU9piZPRROUPwBIoKKBCstFUER/IEEJWChhUh6RVH8A7RJEbGRIKSxSSEIKdKI2AQFRQsrgwHxONnbnZWAv26ejHhHvNvbyx1ckynnvfl+5r15+13CiBeNWB/rDFCr1cJqtbpS1LY4jqUQ4i6AUwB2AvjFzNNKqVuNRmOLEOK0lHKaiNjptFvEzH6WZe993x8vl8vvekGMMQsAjubElwFsY+aLWusnrXgbkCTJDs/zlgB8JaKzUsqXnSJpmo4R0euCCl8x83Nmno2i6E1nBRuzLPsGQLgAMz8KguBOGIZfWoLGmAkAswWAFSKalFI+7qrAbRhj3K0Pdwi8IKKnRLRorT0IYKoXgJlntNaXV8fbLarX6+VSqbSHiOYBbBrm+2Dme1rr67mAOI63CiE+AYgBbB4GAGBSKfUgF8DMXpZlHwFsH1IcRLRXSvkhF+A2kyQ553meG7G/Dz3gWlJK7eo802UVaZqOA7hNRPsHATDzNa31w74AY8xJAM8GEQewLKXcTUQ/+wL+jaub40trhPwGcEQptZiXn+um7sGTJNnn+/5NABcKQExEV6SUM71yugDO8MIwPGStvQHgRIH4d2vtRBRFc0WVtgFpmh7zPO8+Mx9YbYI9Ds83m82rlUrFGVzh+q8CZ8VBEJxn5jMAjgPYAOAHgBqAzwAWrLVzURS97Sfciq+zP9payx4kb+Qt+gMz8bUZQaHuOAAAAABJRU5ErkJggg==" /></a>
                     </li>
-                    <li><a class="menu-liens" target="_blank"><img alt="Twitch" class="svg-icon"
+                    <li><a href="" aria-label="Monstercat Twitch page" class="menu-liens" target="_blank"><img
+                                alt="Twitch" class="svg-icon"
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAahJREFUSEvtlb9KA0EQxr/Zw8Iiu3dgpwjaiYXWohiwUgv/PICF+AKClY0idoKVhYVIGhvBKII2PoEgoo2VhYWKIiaZDZa5kYuJxPMScwlJ5cA1e3vzm29u9xtCi4NanB/tBYhIh7X2GUBXM8q01oqIJMjxQ4G1dk5E0gA+ROQqLoSIBoPijDHfeX8AmPkcwCQR3Wqth+MCcrncMRHNVlXAzAUAgbxGAUdENF9LwVffGgf8qaAqgJlPAMyUq8tms0NKqRsAG8aYtaCwelr0D2jqH2yKyKjruslSv/sB7CulUlrrVGmttaeImc8ATLXkmDLzMoBtEXlyXbenfEnDN7mhe2CtXRGRLSJ6LBQKY57nPdQEAHgFsPu9iehaa32ayWR6HcdZrLQQEekmoqXSN6PGmPvK95EKwh4kInuO46z6vn8JoC/Co14AjIWT/3JTZi62KAKQJqIBAMETjjcAI1HJowDrIflJIhoPZdwB8F5eU0odJhKJu2rOW3OiMXMALPoMAB/AgjHmII6N1wSISGc+n58QkWnf9y88zwuGUaxo70yOVVqdmz8Bis//GT9TTp0AAAAASUVORK5CYII=" /></a>
                     </li>
-                    <li><a class="menu-liens" target="_blank"><img alt="Facebook" class="svg-icon"
+                    <li><a href="" aria-label="Monstercat Facebook page" class="menu-liens" target="_blank"><img
+                                alt="Facebook" class="svg-icon"
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAixJREFUSEu1lk2oTVEUx/+r1CWsdVwTIZkYKJIhKRkISYiByITiZaCnVzKQj2SgCAMfZXAn6g3kFfkY0Ru8jN/Q81GiR90Mzt73FcX119G5t3v3O2d7l3f38KyP31prr7X2EfT5SJ/9IwogWfHe7wOwXUTWkVwJgCLygeQ4yedmNiIiP8oCLQU453YAuA0gcxo770gOJEnyokipEOCcuwDgfA/l+yUip1X1WmgzDeCcuwjgXA/OO1UHzexm54cugPd+F8nHEedfAQw1m83RarX6MdNL0/SqiAzlNlkmm1V1rOWjDajX6wsqlcpbAEtKAD9FZI2qTnTKA0AmmlDVta2LbwPSNB0QkTuR6IfN7GBLnqbpVhHZCGAbgA1dZRHZo6qPsm9tgHPuCYCdZQCSZ5MkuZyXZb+IPChtTZF7qnosBEwCWBrJ4JSZ3cjkzrlBANcjuuNmtj4EfAMwd5YAqZktCgFTAOYHgC9mFssK3vuXJLcEdlNmtjAEvAGwKlD8bGbLYjPhvf9Ecnmg89rMVoeA+wAO9ZJBvqu+hwGQrCVJciQEHAAwPBt3IEVtSnKO9/49gBUlkJl2Ubs8XRnk7Zdt0Gf/AchW+SZVfdXyUbTssmV1sgAykwwumVnXopwGICmNRuMuyT+T2HGiABG5oqpnwsBiD87hfFoX50aFAJKTInLczJ4WlfZvT+Y87/1REdlLcsTMbuV3dQLAbpIPzaz2T09mbLh6kfX9r+I3bHv7Gb7vjmQAAAAASUVORK5CYII=" /></a>
                     </li>
-                    <li><a class="menu-liens" target="_blank"><img alt="Discord" class="svg-icon"
+                    <li><a href="" aria-label="Monstercat Discord server" class="menu-liens" target="_blank"><img
+                                alt="Discord" class="svg-icon"
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeJJREFUSEvNVT1rVEEUPXdcFtfVufM6Q0DED0SbpBJsBW1tlFiIX4WljWJjn07QnxAEi1hY+IGQaBGwFASx8QMJBInNvplZttBl35EJmxCXuPvehgRve+89hzPn3juCHQ7ZYXzsLoH3fkZEZgEcqaisB2CxVqvdbDabPzb3/qUghPAZwPGK4BvlInLXWvtgGAHHBe/3zanq9f+LQERWSP4CcBDAJwATAFYATAHYN6C4mgKS940xSyR/quqXdbBOpzPR7XZPGmNmSN7aRFKJYEFVzw/zxHuficgygAPjeHBVVR+PMj3GOE/yUmWCoigOZ1m2nOf5tDHmPcnLzrmnIYSXIjJprZ1OoCGE2wAeVSXoqOr+1BRjPEPynYjcsNbOxRjfkpxU1RMp770/KyJvqhJ8VdW1hcvz3GVZ5gefKs/zKefcxxhj2vr1ASht8m8AF1T1df+J7vVB0iLuIbm3Xq8/bDQaqyGEWRFJ+RSlCdaqSS6JyHcA1wYUrAJ4BuAcgGPjjumoAdoqP1JBAWzrhA8niDF+IJlOQNmYB3ARgCnlQbvdPtXr9e4AOFqGwRjzHMC3oiieiEhjpMllQLeqCSGcBvAKwIuh53pcgtTXarUOGWOuOOfSj7gRu/snb0fBv3r/AMFP3xnphmnqAAAAAElFTkSuQmCC" /></a>
                     </li>
-                    <li><a class="menu-liens" target="_blank"><img alt="Spotify" class="svg-icon"
+                    <li><a aria-label="Monstercat spotify profil" class="menu-liens" target="_blank"><img alt="Spotify"
+                                class="svg-icon"
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAthJREFUSEu1VV2ITVEYXeuczG3cztln/GQajJ948vvAm6TkJy8SkhceSHnxQEo8eFEkL/KCPKCU5C9KkRRSSopoQv7ycFHM3efMMBjO0h73jjPHHfcS+/Hba3/rW3vt/X3Ef178z/nxWwJJQ5IkWQ5gCckZksYBIMmXku4DuBSG4TmSnwcrdFACa+0CkgcBTKyj8oWkDVEUXa2Fq0lgrd1OcpertsErlKTtURTtyeN/SWCt3VFJ3mDunzCSW8Mw3Jc9OIDAWruQ5OU/zvzzgDzPmxcEwY1qqJ+gVCoNLRaLjwCMrWy+A/ASwBuSryW9BfDNXZukaSTnABhZo5hHYRhOJ9nr9voJkiRZJ+mIC6ZpurylpeVsPSVxHE8mOVfSCgCLqvlILg3D8MIAAmvtWZLLKkk3A+iQNMHzvLGS2km2pWnqk/wE4BbJa0EQ3CbpVKFcLo8j6eKjARw0xmwcQBDH8XMAE2pU/QXAK0klACJpAMys4LoBXPR9f3exWHzY1dV1T9J0AHeNMbPyBAmAoHpQ0tKmpqbHzc3NJZLKEsdxPEzSfJJLAKwGUMgV9t4YMyJP8B7AsAqwS9IykqMATALg7npMmqbOs+ee513o7u6+0tbW9rGzs7Pd933n3YIMSWyMifIePCA5tZ6xmX3XHs4A2CkpInkns9dhjJmSV3AMwJoM6BSAoz09PTdaW1s/VOPlcnm87/srJM2uvBznSX4dN8aszStYRfJkFSlpL4AXFenD+z/Ojz9xvbe390ShUCikaXo48/r6YJJWRlF0egCBpEKSJB0NNLcql3sUO5w/ADZlJDypfLS+DptvFe5l1OyKDXqTkpwXhuHNfsX5g9babSR3N5gwD9tkjDmQDf6rdu1+8xZjzP4846D9Po7jxQAOAWivo+ap53nrgyC4XgtXb2Q64/tGpmsBJN3IdOuZpLsALhtjzpP8OlgRjU6sv7Sk8ZH41wTfAamoFCj4fB7NAAAAAElFTkSuQmCC" /></a>
                     </li>
                 </ul>
@@ -123,23 +128,23 @@
 
         <div class="conteneur-stream">
             <div class="icon-texte">
-                <img class="icon"
+                <img alt="B icon" class="icon"
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAX1JREFUSEu9lb0vBGEQxp+Z2UIhEhLxEeGiJRGFUufqKzU+Gp0oRMS/oJHoKRQkah06hUQhEfEP4AoEiSgUezMjt7GXs5bkdu1t++48v/d5JjMvoeCPCtZHewHu3m9mWwDKAHpbdPcI4JiZ14noKa795kBVDwHMtiic/P1AROZ+A7wD6MwJeBaRhvuGA3cnM7Oc4lG5iDR0kxF5AnAnIiNJqLsPquoUgDUimk6etwK4FZGSu4+a2UIs5O7VIAh23b3PzB5yA8IwnGHm02YhZp4koitVfQHQ03zWioMoojAMy8x80iTywcwDAIbM7CaPgwjg7t21Wm0iFgqCoArg1cwuAZSKACiAcwBjZnYBoCNrRPciMpzWAwDbIrKqqjsAlrIC4h78aDIRHTFzRVU3AGz+N+CamVeI6ExV9wAsZgVEc5A23e4emNny1+0z9+CtnnUKIABQATCeBv9rDuqCXTn3Ufqyq4v+07reF5H51HVd+IOTM5rU8va+yUU4+AQ5F80ZrPBwgQAAAABJRU5ErkJggg==" />
                 <p class="stream-now_texte">PLAYER</p>
             </div>
 
-            <img class="stream_icon"
+            <img alt="Music player" class="stream_icon"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYVJREFUSEvFlL1KA1EQhc+5c0VBJL2VYG2jRiO+g1gqWFj6CDY2dj6GRNJZiOATKBhRbFLZ2gv+FCr3zsgKkXXdNTeJwS134Hxn5swdYsQfR6yPnoAYYwfANICWc65Jst2PqRSAFQTvADSdc4ck73vBkgEkj81sDcBYV9TMzkkeOedaJJ/LYMkAEaGZ1VR1w8y2SK4CXyN+I3mqqk0ROSMZurC+AHmHZjajqlsAtgHM5modEZkbGlCALatqBtrJ/mfd/imgKxZj/FyI/wWY2aKqNszsVUSOVfWh6KpqNXt2EGPcB7CXE3gEUPsTQAghW71mlbv8XAfqIMZ4A2B+lIAnAFMVgDcRmSjWUvL62tcQQpvkUhnAzC699yv5WmpeecAmyVYFYN17f9Kt9ZPXt1NR4irT3BWRg4L7awALKXn9uEVmVlfVbBzqnLsgeVsUijG+AJisALyLyHjyqSgTCSFckaxXjLPtvW8MC0jOq+e5/uVRFV99aV4DAzK1lLyGAlR1l///AX1M5RkDMF0RAAAAAElFTkSuQmCC" />
 
-            <img class="stream_icon"
+            <img alt="soundcloud" class="stream_icon"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaFJREFUSEvtlLtqlUEUhb+153hM1EQSAilUVBQJiBfES2NaGxEsAj6ATyAIvoOtjaBvYC2CleClER8gCAErEbQTUZyZJRN+Q3LIyR+UFGKmm5nN+mbWmj1ih4d2WJ9dQK/D/6FFtgO4Wmu9EBEvJb3byqdtW2R7WEq5FhG3bd/8LSrpqaQlSd83A40F2J4AFnLOs5L2ATMRsVRrnZd0Zb2YpGeSrkvyKGQsIOd8qxP6BISky8C07Vng/KhQRCxKerUlwPZ+IAFfa62PgUngAzCQdK7WOiXpAHB6VMj2C0nPI+I18EZSbjVrN7B9rJSyuLooTUq6Aeyx/bEt2T4laRrYC5zsaYD7KaV7GwCllAeSDtt+DxxqgoAj4gtQbB8BDgJPgLs9gOWU0sIo4JGkOdsrwLztox3gs+2fto939gyBEz2AlZTSas16i86UUs62DCRNARdbuMByF/IlYKLW2l5V2xs32nO9k1J6uAHQJrYHQBNv4JlmDfCtm7fA2+mHOee5zdQHg0EL9q2kH2t90vtb/WXBtjv5Tzm7gF7n/n2LfgFFX4sZP1IVbwAAAABJRU5ErkJggg==" />
 
-            <img class="stream_icon"
+            <img alt="Apple" class="stream_icon"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcFJREFUSEu11T+MTUEUBvDvO2cuihUREaKR6FQidhVKQcg2gqzen4ZGImhpRaKi2kqhsCuhRrWWCJUol4RIKBS6Ld7M+eR1L+8979552b3lnbnnN2fOPTPEJj/c5PiYCpC0JSJuAzjv7ocnLbIakLQtIt4COALgs7sf2lCglPIAwM1+UEkLKaWljQa+Adgn6VJK6WlbDSdukaSDEXESwIyZPSH5M+d81d1flFLOkDwgac3dV0h+H4eNBSTtlLQo6dzAR5K0ama/JJ0GsH0o4F13vzeMjACSmlLKO5KzbekPj5vZHMlPg+9HgJzzZZKLtcElXUwpPWvNIOe8SvJYDUDyuZld6FSDUsofALtqAADX3f1xV6AHIFUCd9z9flfgN4A9NQDJJTNb6ARExCtJJ2qAflNHxKmmaV63FrmUcgvA2HRb0HVJV4a7e1wf7I2IHwCayiz6Z9PHlNLRiX3QHyylPAJwbQrgbErpZSsgaSYivgDY3xWR9D6lNNI//z3sJM1FxAqArR2Qv2Y2S/Jra5EHJ/R6veNm9hDADgDLkt5IWie5m+Q8gHmSH0jeILnW6TftsNqqKdVXZlV0YLpLvwb5ByNftxn916ZqAAAAAElFTkSuQmCC" />
 
-            <img class="stream_icon"
+            <img alt="Youtube" class="stream_icon"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYFJREFUSEvtlU8rRVEUxdc+6w7In4SSIgNKBgZMDM1MlIEvYKAM8CXE1EQZKfkKvoIZipj4MzCQDFASA6W7l67eu967effewkA5s9Nda/9Oa+9zruGXl/1yffwDChOui0hSr7uvShoysz4Ag4UVAAE4k3RvZhchhBUzu636UoCkYXc/BNBWomie5CmEMG5mV4koBcRxvANg7pvFq/ZtkvNZwBGAsZ8ASDqIomgiC3gA0NUAIEnTZrYBYKjEIa5JDmQBMYDQwOwkKSly92UAqwBac0CPJDtTgKQWd3/JMYhkCpfU7e5rABZq+1jjfybZXgtITvaWA4hJRtXvJQCvJJuzESXz3Gh9ACoRLQJYAdCRo78j2ZMFJBG1NDDFkmbNbL1kk89JjmQB1wD6S0xIoUTSXhRFk3UAd9+VNFPoLifYIpkMwOdNljTq7vsAPprznVV5Ko7rAMlG0pi7LwG4qeynzCy53U1fAF8knQJIp8/MLkMIm2Z2UtX//3AKW/X3I3oHIPqhGbym0vYAAAAASUVORK5CYII=" />
-            <img class="stream_icon"
+            <img alt="Spotify" class="stream_icon"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAqpJREFUSEvFVU2IjWEUfs45321KiQYpPzPIrDAs2ElqGmQjDcmGBSmbWZDSWNgoko1shixQSmJolCKpIaWkiKYhZiaLQbHwG+59z6N3+u7tu587c6eJnOX7Puc857znvM8R/GOTfxwf4xKQLIQQOkRkI4DlAJqBUZ9hAE9J3jSzayLyc6xExyQoFovtqtoNYFGdKofcfU+hULhTC1eTIITQBeBImu1EXpEAuszsWB78B0EI4VAafCKB85gDZnYie1hFUCwW16nqrclETn2oqmtF5F45RoWA5BR3HwAwP738QHJYVd+RfAvgPYAQn01ElpFcDWBWjWQGVLVVRIrxrkJQKpV2icjZeEiyI0mSnnqVkGwJIaxR1S0k15fjkdyUJElvFYG795DcnAbd5+79qrowrahJROa4u6nqD5IPVPUugIciEquKSTW7+wMAcwF0m9neKoIQwiCAGDBvvwC8ITkS44jINAArUtBXADdU9SiA5+7+BEArgMdmtjJP8BnA1LKju8cyXwAYEZE4hhUj2RhCaEs/4HYADbmsPprZzDzBRwCNKfCLu28WkdkishhAC8l5aYMHSfaa2W0R+U6yieRZku0Zkk9mNj1P8AzA0nqNzdxHebiqqocBTHf3R5m7fjNbkic4D2BHBnSZ5Dkzuyci38rnJBe4+xYAqwDEyYk9ydsFM9tZRVAqlbaJyKUM8jiAIRFpd/cZ5XMRiX+iT1UvxrcneSYzfaMwkluTJLlSRUCyIY7mBMStzBWHIspKC4DOTGIv0482qrB5qWhT1ZqqOMHeeCoV9ysV5x1DCAcBxLmejHWa2ams49+S6/ib95vZyXxW4y2cDap6GkBTnVJeqepuEemrhau3MhsyKzNKQFyZ0V5HOSB5y8yui0hprCT+79KfTJfzPr8BdcAaKBSZIvYAAAAASUVORK5CYII=" />
         </div>
 
@@ -147,188 +152,190 @@
             <h2> TRACK LIST</h2>
 
             <table class="t_liste">
-                <tr>
-                    <td class="numero-track">
-                        1
-                    </td>
-                    <td><img class="play-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
-                    </td>
-                    <td class="chanson-artiste">
+                <tbody>
+                    <tr>
+                        <td class="numero-track">
+                            1
+                        </td>
+                        <td><img alt="play icon" class="play-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
+                        </td>
+                        <td class="chanson-artiste">
 
-                        <p class="track_chanson">Tributary</p>
-                        <p class="track_artiste">Julian Lage</p>
+                            <p class="track_chanson">Tributary</p>
+                            <p class="track_artiste">Julian Lage</p>
 
-                    </td>
-                    <td>
-                        <p class="minutes">5:47</p>
-                    </td>
-                    <td><img class="share-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="numero-track">2</td>
-                    <td><img class="play-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
-                    </td>
-                    <td>
-                        <div class="chanson-artiste">
-                            <p class="track_chanson">Word For Word</p>
-                            <p class="track_artiste">Julian Lage</p>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="minutes">3:15</p>
-                    </td>
-                    <td><img class="share-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="numero-track">3</td>
-                    <td><img class="play-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
-                    </td>
-                    <td>
-                        <div class="chanson-artiste">
-                            <p class="track_chanson">Auditorium</p>
-                            <p class="track_artiste">Julian Lage</p>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="minutes">4:28</p>
-                    </td>
-                    <td><img class="share-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="numero-track">4</td>
-                    <td><img class="play-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
-                    </td>
-                    <td>
-                        <div class="chanson-artiste">
-                            <p class="track_chanson">Heart Is A Drum</p>
-                            <p class="track_artiste">Julian Lage</p>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="minutes">3:31</p>
-                    </td>
-                    <td><img class="share-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="numero-track">5</td>
-                    <td><img class="play-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
-                    </td>
-                    <td>
-                        <div class="chanson-artiste">
-                            <p class="track_chanson">Echo</p>
-                            <p class="track_artiste">Julian Lage</p>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="minutes">4:52</p>
-                    </td>
-                    <td><img class="share-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="numero-track">6</td>
-                    <td><img class="play-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
-                    </td>
-                    <td>
-                        <div class="chanson-artiste">
-                            <p class="track_chanson">Chavez</p>
-                            <p class="track_artiste">Julian Lage</p>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="minutes">4:19</p>
-                    </td>
-                    <td><img class="share-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="numero-track">7</td>
-                    <td><img class="play-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
-                    </td>
-                    <td>
-                        <div class="chanson-artiste">
-                            <p class="track_chanson">Temple Steps</p>
-                            <p class="track_artiste">Julian Lage</p>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="minutes">3:58</p>
-                    </td>
-                    <td><img class="share-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="numero-track">8</td>
-                    <td><img class="play-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
-                    </td>
-                    <td>
-                        <div class="chanson-artiste">
-                            <p class="track_chanson">Castle Park</p>
-                            <p class="track_artiste">Julian Lage</p>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="minutes">3:57</p>
-                    </td>
-                    <td><img class="share-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="numero-track">9</td>
-                    <td><img class="play-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
-                    </td>
-                    <td>
-                        <div class="chanson-artiste">
-                            <p class="track_chanson">Let Every Room Sing</p>
-                            <p class="track_artiste">Julian Lage</p>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="minutes">5:10</p>
-                    </td>
-                    <td><img class="share-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="numero-track">10</td>
-                    <td><img class="play-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
-                    </td>
-                    <td>
-                        <div class="chanson-artiste">
-                            <p class="track_chanson">Fairbanks</p>
-                            <p class="track_artiste">Julian Lage</p>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="minutes">3:55</p>
-                    </td>
-                    <td><img class="share-icon"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
-                    </td>
-                </tr>
+                        </td>
+                        <td>
+                            <p class="minutes">5:47</p>
+                        </td>
+                        <td><img alt="share icon" class="share-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numero-track">2</td>
+                        <td><img alt="play icon" class="play-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
+                        </td>
+                        <td>
+                            <div class="chanson-artiste">
+                                <p class="track_chanson">Word For Word</p>
+                                <p class="track_artiste">Julian Lage</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="minutes">3:15</p>
+                        </td>
+                        <td><img alt="share icon" class="share-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numero-track">3</td>
+                        <td><img alt="play icon" class="play-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
+                        </td>
+                        <td>
+                            <div class="chanson-artiste">
+                                <p class="track_chanson">Auditorium</p>
+                                <p class="track_artiste">Julian Lage</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="minutes">4:28</p>
+                        </td>
+                        <td><img alt="share icon" class="share-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numero-track">4</td>
+                        <td><img alt="play icon" class="play-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
+                        </td>
+                        <td>
+                            <div class="chanson-artiste">
+                                <p class="track_chanson">Heart Is A Drum</p>
+                                <p class="track_artiste">Julian Lage</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="minutes">3:31</p>
+                        </td>
+                        <td><img alt="share icon" class="share-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numero-track">5</td>
+                        <td><img alt="play icon" class="play-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
+                        </td>
+                        <td>
+                            <div class="chanson-artiste">
+                                <p class="track_chanson">Echo</p>
+                                <p class="track_artiste">Julian Lage</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="minutes">4:52</p>
+                        </td>
+                        <td><img alt="share icon" class="share-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numero-track">6</td>
+                        <td><img alt="play icon" class="play-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
+                        </td>
+                        <td>
+                            <div class="chanson-artiste">
+                                <p class="track_chanson">Chavez</p>
+                                <p class="track_artiste">Julian Lage</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="minutes">4:19</p>
+                        </td>
+                        <td><img alt="share icon" class="share-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numero-track">7</td>
+                        <td><img alt="play icon" class="play-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
+                        </td>
+                        <td>
+                            <div class="chanson-artiste">
+                                <p class="track_chanson">Temple Steps</p>
+                                <p class="track_artiste">Julian Lage</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="minutes">3:58</p>
+                        </td>
+                        <td><img alt="share icon" class="share-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numero-track">8</td>
+                        <td><img alt="play icon" class="play-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
+                        </td>
+                        <td>
+                            <div class="chanson-artiste">
+                                <p class="track_chanson">Castle Park</p>
+                                <p class="track_artiste">Julian Lage</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="minutes">3:57</p>
+                        </td>
+                        <td><img alt="share icon" class="share-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numero-track">9</td>
+                        <td><img alt="play icon" class="play-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
+                        </td>
+                        <td>
+                            <div class="chanson-artiste">
+                                <p class="track_chanson">Let Every Room Sing</p>
+                                <p class="track_artiste">Julian Lage</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="minutes">5:10</p>
+                        </td>
+                        <td><img alt="share icon" class="share-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numero-track">10</td>
+                        <td><img alt="play icon" class="play-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJBJREFUSEvtlFEOgCAIhv2HHtstz1MH8jJiq/XQQwXUWD3kq8gHHw4E5wPn/OEHiIbfVcTMI4AMoIqlngRcdtBa69u7gYjKHYgWsOSuvfccY5wsIAtgzQtgsmgzA3bVq7Q9Aai0fRpQiGiQBm7uwHPIft+UmUtKSdRxpOtSkfuqkAaouX93m2oqlGL+DiRDYQZytlEZnluQRwAAAABJRU5ErkJggg==" />
+                        </td>
+                        <td>
+                            <div class="chanson-artiste">
+                                <p class="track_chanson">Fairbanks</p>
+                                <p class="track_artiste">Julian Lage</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="minutes">3:55</p>
+                        </td>
+                        <td><img alt="share icon" class="share-icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkFJREFUSEu1lT1oFEEUgL+3d6dY3M5uYixSBittRDFKLLSw0YBYaKeNaUwjiqgJwU5IUAQbjVhZhIC2EVtRJKCgiIVWYhFFSITMZElEbjNPVvaCuWzgfsx0O8y8772339sVtnjJFsenI4Bz7iRwEzgIfFfV61EUPfk36bYBzrkTwDMgaOjCoDHmeX2vE8DbPPN7aZreLZfLV4HLwKwx5sj/APwGtgVBsKtarS4kSdLjvZ8HfhpjetoGqGrgnBsSkQdAWVUv1mq16Uqlci7fmzHGnGoLkCTJUe/9fWBvkX2q+ktVB+I4/lAIsNaeEZFLwAHgZRAEE9Vq9ZW1tg+4KyKn84s/gBHv/VwQBLeB/cB7EbkShuHrQovy4E9hnboeyLQ7m7UDyPp+Z3l5eby3t3elmRlas8g59wboBxqtqMeZTtP0Rnd397dmAm9okXMuBUoFVnhV7Y+i6F0rgTcAlpaWXqjqsQIrasBQGIZTIqKtQtZaZK09LiLZBFY2CTK7uro63NXV9bEVyLpJziHXgAHgk/d+pFQq9anqBLATyCqY9N6PxXFsmwE19amw1sYicgsYzi1bEJFR7/1XERnPtZ5T1UdRFGXPa6spQP304uLiviAIHgKHNsteVYejKMrO/F0tAbILqipJklxQ1cn8fTVq/cUYs7ttQP2itXZFRHYUaK1hGG4Xkcy+1iuoA+qDWaD1Z2PMno4rcM4NAjMFSZ43xkx1DMgC5L/MUeAwMC8iY2EYPm7boma8bzzTskWtQv4AvGr7GRXChn8AAAAASUVORK5CYII=" />
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
@@ -336,10 +343,10 @@
 
             <h2>MUSIC VIDEO</h2>
 
-            <!-- le vrai video est bloqué au partage donc voici des chat -->
+            <!-- le vrai video est bloqué au partage donc voici des chats -->
             <div class="conteneur_iframe">
-                <iframe src="https://www.youtube.com/embed/SzUFxWXvMiw?si=SU1rg34A7AQpFRzg" title="YouTube video player"
-                    frameborder="0"
+                <iframe src="https://www.youtube.com/embed/SzUFxWXvMiw?si=SU1rg34A7AQpFRzg"
+                    title="YouTube video player for cat video" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
@@ -349,20 +356,28 @@
     </main>
 
     <footer>
-
         <div class="content">
-            <nav class="footer_nav">
+            <nav aria-label="footer navigation/menu" class="footer_nav">
                 <ul class="grid-1">
-                    <li class="footer_menu-lien"><a>ABOUT MONSTERCAT</a></li>
-                    <li class="footer_menu-lien"><a>CONTACT US</a></li>
-                    <li class="footer_menu-lien"><a>CAREERS</a></li>
-                    <li class="footer_menu-lien"><a>NEWS</a></li>
-                    <li class="footer_menu-lien"><a>PRESS</a></li>
+                    <li class="footer_menu-lien"><a href="" aria-label="Link for About monstercat page">ABOUT
+                            MONSTERCAT</a></li>
+                    <li class=" footer_menu-lien"><a href="" aria-label="Link to contact Monstercat">CONTACT US</a>
+                    </li>
+                    <li class="footer_menu-lien"><a href=""
+                            aria-label="Link to browse careers at Monstercat">CAREERS</a></li>
+
+                    <li class="footer_menu-lien"><a href="" aria-label="Link to read news about Monstercat">NEWS</a>
+                    </li>
+
+                    <li class="footer_menu-lien"><a href=""
+                            aria-label="Link to read press and media about Monstercat">PRESS</a></li>
                 </ul>
 
                 <ul class="grid-2">
-                    <li class="footer_menu-lien"><a>TERMS OF SERVICE</a></li>
-                    <li class="footer_menu-lien"><a>PRIVACY POLICY</a></li>
+                    <li class="footer_menu-lien"><a href="" aria-label="Link to  Monstercat terms of service">TERMS OF
+                            SERVICE</a></li>
+                    <li class="footer_menu-lien"><a href="" aria-label="Link to Monstercat privacy policy">PRIVACY
+                            POLICY</a></li>
                 </ul>
 
                 <div class="grid-3">
@@ -386,67 +401,68 @@
                     <ul class="liste-reseaux">
                         <li class="reseaux-items">
                             <a href="">
-                                <img class="footer-icon"
+                                <img alt="Youtube" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPhJREFUSEvtle1xgzAMhl9ZsEeyCUzSZpJ0kzSThE3CHmCppx6m+SCIhHDXH/iP74ykR3otZMLCixaOjxXgKnwlkapuRORDVQsi2nTeaR8KVqdDVa2JqBaRY57nVTrvAU3TFCGEk5uSb2CQXYL0gBjjAcCn7+9bqGqVZVlplpeAM4AxOfzIfxY1M2+fAohIGUKwKqckMQjQsRSZmVITAPjyyjH72wpcwEXH/HbbGOj/AmKM+1clGu2i2Zfctu2JiArv8qZ8H/wP3gkA8M3Mu6su6lrQZJq9TM67UWFRO8je9onDztz6gQegejjsZqf9IMD6ornKLi7RD4ImjRkUzkXOAAAAAElFTkSuQmCC" />
                             </a>
                         </li>
                         <li class="reseaux-items">
-                            <a href="">
-                                <img class="footer-icon"
+                            <a href="" aria-label="Montercat Instagram page ">
+                                <img alt="Instagram" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbFJREFUSEvFVUFOw0AMXHvTL3Bt+hLaC3cegGhfUioeQvsMTpSXELhw5pxdGznaXTnJkm6RquYWxfaM7fEEzIUfuHB9cx0AZq6J6JGZlwCwnOiyCd+OiLgDgPieUkYdOOfWAPASIiThODVGIRNISOzeWrvT8T2AwPyDmY9VVa1K9xPy3iSeiDaz2SyR6gF474X5GhEXuXaHgM65BwAQxj+IeE9EI3JDAAlocuzD6ObGmJqZ36uq2rdte4eIr8aYL2vt3DnXdaHzhwAc5riJbKV96Syz7AYRn73339baGwA4CAAA1NbaRcw/CRCSRElPssCoMHk3xjS6WByxtTbVnQRQiuqK6x3Eb0S0ikstBUjFppYeFRc7E/D/AGylwF+q8t7LzkaETo0oJbRtu0REUcZoRN77DpyZN6KoczqQa+xUpBRUxyvVSx4eZOmIEsAAZOhJItOVPsiTALlDUSBifLciTWb+jGPRyvLejw41ZxUy9x6zEk9SqupNIGt2wvIcEH3t+i6E2JRdJ68vtGsRRVJU1iq0/xDRVnn9FEb3zyCig7bpSYCSmZfGXOefXMquJO4XiJZeKEZy4qkAAAAASUVORK5CYII=" />
                             </a>
                         </li>
                         <li class="reseaux-items">
-                            <a href="">
-                                <img class="footer-icon"
+                            <a href="" aria-label="Montercat Tiktok profil">
+                                <img alt="Tiktok" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATpJREFUSEvFVe2RgjAQ3Y/Qh3ailaiV3FmJUIl0on2QsDd7E5wQEqIDjPuHYYfd9/brgbCx4cb54WMA59wNAM6e2JOZ93MklwIAEe0R8ZkDWQwAADUzX7YE0Ny/zHxNgaxRwX9eEWkBoGHmNmzZagAB+1HLvgsgIru+708AoM+mqqo2XlMiOvpvdHV38dCTFfjEdx8w9PhijKnn7kDj4pWdAHRddyAiTT4yESkCvLVFzrlHyHy4WBG5liooAlhrz4ioUvBaPWPMMQxcJBVRMDDzpIWLAKy1d0Q8eMZJCVgTIKmU0YxmdUiJjloQzyDWGOfcj/pyV1scst9/3aLQav+irdNDellJqicVqCNRRYqY+rIKGgYkLznRihjkreTJCoIbGHRo0Bj9a9VE1Mz9wWImH6tprl85/+YAf0dIvRkg3i9zAAAAAElFTkSuQmCC" />
                             </a>
                         </li>
                         <li class="reseaux-items">
-                            <a href="">
-                                <img class="footer-icon"
+                            <a href="" aria-label="Montercat Twitch page ">
+                                <img alt="Twitter" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAURJREFUSEvlVduRgzAMtCzog1RyuUoSKkmukguVhE6OPrClm82YjAGbR2byFX7MQ/JqV/JC5s0XvXl/86EAfd8fiehCRFWQ+MbMP6paicgJ94P0I4mcc3dmromoy/XGOXcmot/Ed+RUqloXRXFLAnjv1RiDwEdFKZAQk8NHbisiTVmWLYKeDAK9vyjzaq1tYjYL1T/TROR72HwEgAdIRETHCKRTVVTVYIXmGXmGFDCvY3rTHkDfC7R88XzkARIS7caYNniLRLtArLWH6QSOJAos7q9KxMwzZ5i9wCGy1p6MMec95afkmUkUJil3kJbwOmY+pAKSZue9xyRdtzKYzn52TOMPg6+sAeWkSVoFXmJjrCICFot9WKp8BrBnglS1XTPFJAOAeO9hxV+4j+wYzGAV7dSf1vr0oX+0NVk2jemeTZZi/wFLh60Z5n5zsgAAAABJRU5ErkJggg==" />
                             </a>
                         </li>
                         <li class="reseaux-items">
-                            <a href="">
-                                <img class="footer-icon"
+                            <a href="" aria-label="Montercat Spotify profil">
+                                <img alt="Spotify" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbhJREFUSEu1VdFxwjAMlWwzR+kkhUkKkzSdBJgEmKTpHNhW7/lsn+JAQ+DwT3KJpCfpPclMLz784vg0CXC5XFbGmA8iWhLRhoh6IjrhGWM8LxYLvN88NwFEZBlC2DHzaqLK3hizZmYAj85VgBDCFxF1M9qH4Htr7XfrMwLw3m+YeTcjuDbtWpABANoSY/x5MDjcwMtW8zIA8N4fVc97EemZuSURZBOSucFPb619L0lWAN0aEdk65/ZTlWQhQASfGizGuC5VXAUAwZBglieyrUqCWkTkDHBr7amoJ7f3mOVcuagAkGTWeZt4K7/UonzSTMQYD8g4hAD+liJycs6tYaMB0k/l3BljDq2+kSlsQgij1mjgwsMtgKQGOKgprlnrCc6twdxgyuux1qbYmgOtoCl+kyRLe3Ii6H85GLqUoK6gnV6oKO0b51zlwXsPeaJNA+U0GY1JzktNZ9GJyC8zvylnBMbuSdw0yqlmWua1ghnLTSsIVZYtm75rBQ1alH8+uypID9kIAB9euuxK7Q+sa7iONunVCgrIDE7mXzgapMiSmXFtpp1UtuxTV+Y9k3aPzeSlf0+Q/2z+AAvyByio/f32AAAAAElFTkSuQmCC" />
                             </a>
                         </li>
                         <li class="reseaux-items">
-                            <a href="">
-                                <img class="footer-icon"
+                            <a href="" aria-label="Montercat Apple Music page">
+                                <img alt="Apple music" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASlJREFUSEvVldFxwjAMhiVb2QM2KZMAkwCTlE4CTFJ3D1vixAUuTay4zpmH6tU+ffL/SzLCmwPfnB8WA1JKBwDYee/Xc0UuAsQYL4j4AQBn7/2+KSCl9KmVa1Jm3nRdd20N+AaAlYjsiehc8nBWIhFZpZRUCngmU+2Z+UZEgZm3IvIzBzIBQykGVQYRCb3+w+JD78dp/KIsYGBiSYFf5865NSIq7BUTQIxxh4hqZFVYhk8AhjQlmNmuOcCjS0oZR+dH7/1Ef72TA0hlcr3+d8ASg0XkSkSbXGGtPDCnulkXAUB2FiYAnV5mVqOrIyeVNWjNZiEL6F9xqWlXy2hzF1VKFayPp7hNmVl/Lt2ouvd1g94QUQdx2y+9o3Pua7yDngYu+tFq3P//gDsUdqIZK21wcgAAAABJRU5ErkJggg==" />
                             </a>
                         </li>
                         <li class="reseaux-items">
-                            <a href="">
-                                <img class="footer-icon"
+                            <a href=" " aria-label="Montercat Twitch page">
+                                <img alt="Twitch" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARpJREFUSEvtVdF1wjAMlCJnj3aShkmASQqTNJsAk5RBIol3ecYvUCeQpKE/9V/ipzuddJKZFj68MD69nkBVv4nobY4yEUmJ3yhommbDzF8RvJ5AUiG5IYIDM1fufgwhrMYSqCqS2/QSqKoD9E8I3L3tCzOfr8rwr/s9S8F9MMDNDIbYicgepP8ENw5ZokSf0YLv0WnowYGI6l/pwTMzMavJjwg6W+AsIq3K1tbdwKmD1gU3s21ZlsdBAiLCMKVdZGYnBMXGrjNqdoi5B+9VkAGoi6LYo8bYVZn7LPjTBNhNcU2MAs8RwIrpuHuVyRjlSOdavj4TDL5oqgrCBOju2xDCqHdikABNVVWo+HD301jwHyV65PUp94s/+hdn3ScogIZAKQAAAABJRU5ErkJggg==" />
                             </a>
                         </li>
                         <li class="reseaux-items">
-                            <a href="">
-                                <img class="footer-icon"
+                            <a href="" aria-label="Montercat Facebook page">
+                                <img alt="Facebook" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWtJREFUSEu1le1xwyAMhkHgOZpMUnuSJpM0mSTpJEknqfcwoJx8hsN8c9fwx19Yj6RXSJy9efE322dVwLIsIwB8IuLIOR8ZYzNj7ElXY8zvMAx0n11ZACIetNa3zWjJxgwAE+ecwNFKArTW34yxS0f6yPhdCHEN/4kAHcbJ6CEweAkhOwClxRjzV/B8RsSrlPJu9wQOkS5nX5cdQCn1KOUcAI5hrhMRz0KIo3XAAZRSJ875reA95fhsv2/RfnnV5X41xkw2CgdoyL3Lb4Mzbq8PIO9PuQgQ8WxzX3MGEZ9Syols+QASN6wKx+sB0CG0OtQAO8FS0eUKQwix2vZFTlVQFaC1TkXuCqIm8toGVk+8VkAVZKPJnJsYsDW1xz+J7Aqi+aC1iuxX0E4Deii1ilaAf8giAL3I1XgjoNzsMg1sfV0D+N99HZsHTgEQddAmQNjU/PG49aIPAPjJTbKom3ZMr66t1aHfZS2x+QVcKhEoQHXXNgAAAABJRU5ErkJggg==" />
                             </a>
                         </li>
                         <li class="reseaux-items">
-                            <a href="">
-                                <img class="footer-icon"
+                            <a href="" aria-label="Montercat Discord server">
+                                <img alt="Discord" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAS5JREFUSEvNVdFxgzAMlSzYg2xCJ2nZJJkkySRhk9I5wFJOnJUjDunZbmjLFweWnt6Tnoyw8YMb54ffBRjHsXXOHQGgyWQ2AEBPRF0cd8dgmqYLIraZyW/HRaSrquq0jL8D8N5LafIQd4pZ/AuAWV8AuEknIgMiap/iXmUz2IvIV6yryiEiDTO/A8B+IWsWwMPhuD8B5LMIYG0i1gYgmrx0Bs65HSIO5g1m7uq67kPChoh2Chj+X7KniIjmCTMZmPlNAbz3asT2pwCDJVAAZbKmv36P+pAskSbUwwdNHKrW1xloOVnh30e2RCHAPGAJjIhWrl6I10oyg9KN8ccABdtUXZzuZLO/iCStbETsnXNnZjY3fy9RqfChMDXbw6XzsivT2NtoW7EvA3jGfnOAK5B14Bli9bnSAAAAAElFTkSuQmCC" />
                             </a>
                         </li>
                         <li class="reseaux-items">
-                            <a href="">
-                                <img class="footer-icon"
+                            <!-- icone choisi car original introuvable -->
+                            <a href="" aria-label="Montercat Steam page">
+                                <img alt="Steam" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcRJREFUSEu1VduRwjAM9CPUcVAJUAmkEqASuErgKiGfV8LNEEnMemTGSYyd+8A/mYxt7Wqlla358LIfjm+qAER0UBJ7Y8zSGNPp/01EfpqmuZRIvgV4PB4b59xZg5ZiAPDivT/lDmUBlPXxn/IdcyATACICa8hRW52IdNbaTXJwAjIAUFmulcgdM7eLxeKGcyKyZOadMSZkzMzbuIf/AQAR3WuaIwAuan1Q4KX3vk0y77z3q0jyBdD3/d5aC3lKC8Vs+76/Nk0TgDTrnXPuxMwgOMjiBTBHexFpobtzbp0WFHc1C1HZbpFAClCUR0TCJWiOgKMMAiARBQB4JcqUAsBQb1vTObey1gaTRVmilqMa5AFiRxAR2m6Xth+kKTk245tpBuPKqhQA+xOR37T1EjLnkQ9CmCjnpE1z7ZP0uYmFneH00G0DAA10YObvMVscRGHRivjmWKfkUrO9iqwAcHGYmM65bSyqAtxF5DTDK3mjIcjIbBeMY2vtGuAIPme6FkeFMk3bFQMNrL90ACK70ioPu3hzRhFzIPPGdbypciGbGuvBdB0jF5/M6AXUwRgDT0Sw8Ioh2LuXLAJV3+SK5tXtjwM8ASrCJSgouQUyAAAAAElFTkSuQmCC" />
                             </a>
                         </li>
                         <li class="reseaux-items">
-                            <a href="">
-                                <img class="footer-icon"
+                            <a href="" aria-label="Montercat Pinterest page">
+                                <img alt="Pinterest" class="footer-icon"
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbxJREFUSEu1VdFxwjAMteywB0xSmKQwSWES2AQ6CekcxFZPPsv3ojjkoFf/JHEkPb0nWSb3z4v+Ob5bBHg8Hlvv/Qczb4lo65zrnXM3eaaUvlerlbzPrlkAZl7HGM8l6LMYvfd+R0QCPFlNgBjjl3Pu+IJ8EvwSQjhZnwnAQvCemfsnrI4WZAQgsqSU7iYL0fpgtS62n4bpxHYEMAzD1WRXM4Ji/wgLBRyGYU9EZ0iqDyFs9LsCWENmvnVdt5srtv6XQFbWlNJOE6gA1iiEkP8Bq5b+UthDQ9rKHAGE5r5QyzSVFWZrZKxy4D7aI4AUd10AcmbKipkPXdddihxo57z3GzkDc8BNAM1AAVDTGCNjl6mUMcYRsO5jkbGDMnXQNmva6JjMtDBD4Lo/VwPxUZnuzHwSiWwjqHSNDqySVoDS51dzyET3vepcbLTn62iw8mDNlg5axlM9RTL51sHWOiPYQdkWM55jIToXGWQI5m4qazIQsSEmAK1TqXRldMM5aQ5alGYyKtADiwkAozZsIEwmaZOBOqq+0kFEtDYDDeO/fuGgt47lcmXmIpc74fanK7Mp8hubi5f+GzFHLr+Iw3Qo6UI2rgAAAABJRU5ErkJggg==" />
                             </a>
                         </li>
@@ -466,7 +482,7 @@
             </div>
         </div>
     </footer>
-    <script src=" scripts.js"></script>
+
 </body>
 
 </html>
